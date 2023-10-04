@@ -1,0 +1,43 @@
+{
+  "name": "brickolage",
+  "version": "1.0.2",
+  "description": "A tiny modern Masonry alternative, created with CSS3 flexbox + pure javascript",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "dist/brickolage.build.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/da-yauhenzadziarkouski/brickolage.git"
+  },
+  "author": {
+    "name": "Yauhen Zadziarkouski",
+    "email": "yauhen.zadziarkouski@darwinapps.com",
+    "url": "https://darwinapps.com"
+  },
+  "keywords": [
+    "masonry",
+    "flexbox",
+    "javascript"
+  ],
+  "scripts": {
+    "start": "webpack --mode=development --config=config/webpack.config.js",
+    "build": "webpack --mode=production --config=config/webpack.config.js"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.16",
+    "node-sass": "^9.0.0",
+    "postcss-loader": "^7.3.3",
+    "sass-loader": "^13.3.2",
+    "style-loader": "^3.3.3"
+  },
+  "devDependencies": {
+    "css-loader": "^6.8.1",
+    "css-minimizer-webpack-plugin": "^5.0.1",
+    "mini-css-extract-plugin": "^2.7.6",
+    "terser-webpack-plugin": "^5.3.9",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  }
+}
