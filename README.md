@@ -3,12 +3,12 @@
 A tiny modern Masonry alternative, created with CSS3 Flexbox + vanilla JavaScript. 
 Based on an [elegant idea](https://tobiasahlin.com/blog/masonry-with-css) of [Tobias Bjerrome Ahlin](https://tobiasahlin.com).
 
-Update 2023: This is a slightly updated version [of my own lib](https://github.com/wpspade/brickolage), created in 2019.
+Update 2023: This is a slightly improved version [of my own lib](https://github.com/wpspade/brickolage).
 
 ## Features:
 
-  - Pure CSS3 Flexbox layout + a bit of JavaScript. Number of columns is determined by item width via CSS.
-  - Dependency-free.
+	- Dependency-free.
+  - Pure CSS3 Flexbox layout + a little bit of JavaScript. Number of columns is determined by item width via CSS.
   - Grid items stay untouched. No removing/adding DOM elements except separators.
   - No possible issues with absolutely positioned grid items, because it's a Flexbox layout as is.
 
@@ -58,11 +58,11 @@ var fire = function() {
 
 | Option | Description |
 | ------ | ------ |
-| container | Specify selector or element. Default: *".brickolage--container"* |
-| item | Specify selector or elements (HTMLCollection). Default: *".brickolage--item"* |
-| separatorClassName | Column separator className. Default: *"brickolage--separator"* |
-| separatorTagName | Column separator tagName. Default: *"li"* |
-| originalOrder | Determines order style. Default: *false* |
+| container | Specify a selector or HTML element. Default: *".brickolage--container"* |
+| item | Specify a selector or HTMLCollection. Default: *".brickolage--item"* |
+| separatorClassName | A column separator className. Default: *"brickolage--separator"* |
+| separatorTagName | A column separator tagName. Default: *"li"* |
+| originalOrder | Determines the items order style. Default: *false* |
 
 Be careful when changing default *container*, *item* and *separatorClassName* options, because of core styles.
 
@@ -79,9 +79,9 @@ new Brickolage( {
 
 | Method | Description |
 | ------ | ------ |
-| reLayout | Use to quickly update container height and items order. |
-| reFresh | Trigger after the items were added or removed. Accepts new options. |
-| destroy | Return elements to pre-initialized state. Callback function returns destroyed instance. |
+| reLayout | Use to quickly update the container height and the items order. |
+| reFresh | Trigger this method after items were added or removed. Accepts new options. |
+| destroy | Destroys and cleans up the DOM. Returns elements to pre-initialized state. Callback function returns a destroyed instance. |
 
 **Call method after initialization**:
 

@@ -12,8 +12,8 @@ function getSorted({ columnsNum, items }, isOriginalOrder) {
   items.filter(item => !!item)
     .map((item, index) => {
       const itemHeight = normalizeHeight(
-        window.getComputedStyle(item).getPropertyValue("height")
-      ) || 1;
+        window.getComputedStyle(item).getPropertyValue("height") || 1
+      );
 
       if (isOriginalOrder) {
 

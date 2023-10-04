@@ -30,13 +30,13 @@ function getElement( val, parent ) {
 export default function getInstances( { container, item, separatorClassName } ) {
 
 	const instances = [],
-		_container = Array.from( getElement( container ) );
+		_container = [...getElement( container )];
 
 	if ( !! _container.length ) {
 
 		_container.map( ( elem, i ) => {
 
-			const items = Array.from( getElement( item, elem ) )
+			const items = [...getElement( item, elem )]
 			.filter( item => ! ( !! item.classList && item.classList.contains( separatorClassName ) ) );
 
 			if ( ! items.length ) return;
