@@ -1,5 +1,5 @@
 /*!
- * Brickolage v.1.0.2
+ * Brickolage v.1.0.4
  * A tiny Masonry script alernative, based on CSS3 flexbox layout.
  *
  * Author: Y. Zadziarkouski aka wpSpade

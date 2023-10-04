@@ -1,3 +1,7 @@
+function normalizeHeight(itemHeight) {
+  return Math.ceil(parseFloat(itemHeight))
+}
+
 function getSorted({ columnsNum, items }, isOriginalOrder) {
 
   const sorted = Array.from({ length: columnsNum }, () => []),
@@ -7,8 +11,9 @@ function getSorted({ columnsNum, items }, isOriginalOrder) {
 
   items.filter(item => !!item)
     .map((item, index) => {
-      const itemStyles = window.getComputedStyle(item);
-      const itemHeight = itemStyles.getPropertyValue("height") || 1;
+      const itemHeight = normalizeHeight(
+        window.getComputedStyle(item).getPropertyValue("height")
+      ) || 1;
 
       if (isOriginalOrder) {
 
@@ -29,7 +34,7 @@ function getSorted({ columnsNum, items }, isOriginalOrder) {
 
         sorted[n].push(index);
 
-        _heights[n] += Math.ceil(parseFloat(itemHeight));
+        _heights[n] += itemHeight;
       }
     });
 
