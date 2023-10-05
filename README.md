@@ -5,6 +5,8 @@ Based on an [elegant idea](https://tobiasahlin.com/blog/masonry-with-css) of [To
 
 Update 2023: This is a slightly improved version [of my own lib](https://github.com/wpspade/brickolage).
 
+## [Demo](https://da-yauhenzadziarkouski.github.io/brickolage/examples/)
+
 ## Features:
 
 	- Dependency-free.

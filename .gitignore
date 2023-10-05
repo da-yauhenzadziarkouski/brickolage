@@ -11,4 +11,5 @@
 
 # Artefacts
 **/.DS_Store
-dist/
+
+**/build
