@@ -1,0 +1,14 @@
+/*!
+ * Brickolage v.1.0.5
+ * A tiny Masonry script alernative, based on CSS3 flexbox layout.
+ *
+ * Author: Y. Zadziarkouski aka wpSpade
+ * 
+ * The author of the original idea is Tobias Bjerrome Ahlin.
+ * Article: https://tobiasahlin.com/blog/masonry-with-css/
+ *
+ * License MIT
+ *
+ * Copyright 2019 wpSpade
+ * https://themeforest.net/user/wpSpade
+ */
