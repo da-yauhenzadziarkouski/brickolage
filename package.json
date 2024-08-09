@@ -1,6 +1,6 @@
 {
   "name": "brickolage",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "A tiny modern Masonry alternative, created with CSS3 flexbox + pure javascript",
   "license": "MIT",
   "publishConfig": {
@@ -18,9 +18,17 @@
   },
   "keywords": [
     "masonry",
+    "layout",
     "grid",
     "flexbox",
-    "javascript"
+    "javascript",
+    "html",
+    "css",
+    "scss",
+    "front-end",
+    "frontend",
+    "web",
+    "responsive"
   ],
   "scripts": {
     "start": "webpack --mode=development --config=config/webpack.config.js",
@@ -31,8 +39,8 @@
     "css-loader": "^6.8.1",
     "css-minimizer-webpack-plugin": "^5.0.1",
     "mini-css-extract-plugin": "^2.7.6",
-    "node-sass": "^9.0.0",
     "postcss-loader": "^7.3.3",
+    "sass": "^1.77.8",
     "sass-loader": "^13.3.2",
     "style-loader": "^3.3.3",
     "terser-webpack-plugin": "^5.3.9",

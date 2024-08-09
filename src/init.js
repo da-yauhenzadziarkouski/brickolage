@@ -1,15 +1,15 @@
 import getOptions from "./getOptions";
 import getInstances from "./getInstances";
 
-export default function init( opts ) {
+export default function init(opts) {
+  const options = getOptions(opts),
+    instances = getInstances(options);
 
-	const options = getOptions( opts ),
-		instances = getInstances( options );
+  if (!!instances.length) {
+    instances.map((instance) =>
+      instance.container.classList.add("brickolage--initialized"),
+    );
+  }
 
-	if ( !! instances.length ) {
-
-		instances.map( instance => instance.container.classList.add( "brickolage--initialized" ) );
-	}
-
-	return [ options, instances ];
+  return [options, instances];
 }

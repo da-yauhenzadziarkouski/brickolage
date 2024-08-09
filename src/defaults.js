@@ -1,7 +1,8 @@
 export default {
-	container: ".brickolage--container",
-	item: ".brickolage--item",
-	separatorClassName: "brickolage--separator",
-	separatorTagName: "li",
-	originalOrder: false
+  container: ".brickolage--container",
+  item: ".brickolage--item",
+  gridSizer: ".brickolage--sizer",
+  separatorClassName: "brickolage--separator",
+  separatorTagName: "li",
+  originalOrder: false,
 };

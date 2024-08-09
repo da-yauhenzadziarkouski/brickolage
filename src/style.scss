@@ -21,11 +21,6 @@
 	}
 }
 
-.brickolage--item {
-	width: 33.333%;
-	max-width: 33.333%;
-}
-
 .brickolage--separator {
 	flex-basis: 100%;
 	visibility: hidden;
@@ -33,9 +28,16 @@
 	z-index: -1;
 }
 
+.brickolage--sizer,
+.brickolage--item {
+	width: 33.333%;
+	max-width: 33.333%;
+}
+
 /* Two columns */
 
 @media (max-width: 1199px) {
+    .brickolage--sizer,
 	.brickolage--item {
 		width: 50%;
 		max-width: 50%;
@@ -45,6 +47,7 @@
 /* 1 column */
 
 @media (max-width: 576px) {
+    .brickolage--sizer,
 	.brickolage--item {
 		width: 100%;
 		max-width: 100%;

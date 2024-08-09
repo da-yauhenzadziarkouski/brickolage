@@ -1,10 +1,14 @@
-export default function setColumnsNum( instance ) {
+export default function setColumnsNum(instance) {
+  const { container, items, columnsNum, sizer } = instance;
 
-	const { container, items, columnsNum } = instance;
+  const newColumnsNum = Math.round(
+    (container.clientWidth || 1) / ((sizer || items[0]).offsetWidth || 1),
+  );
 
-	const newColumnsNum = Math.round( ( container.clientWidth || 1 ) / ( items[ 0 ].offsetWidth || 1 ) );
+  instance.columnsNum = newColumnsNum;
 
-	instance.columnsNum = newColumnsNum;
-
-	instance.__changed = { ...instance.__changed, columnsNum: newColumnsNum !== columnsNum };
-};
+  instance.__changed = {
+    ...instance.__changed,
+    columnsNum: newColumnsNum !== columnsNum,
+  };
+}
